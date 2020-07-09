@@ -1,0 +1,228 @@
+.App {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*header*/
+.header {
+    margin: 10px 0px;
+}
+
+.titleContainer {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/*loader*/
+.loaderWrapper {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 9999;
+}
+
+.loadGif {
+    width: 250px;
+}
+
+/*scenario*/
+.Scenario {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.teamsWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.specificTeam {
+    border: 1px solid blue;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    min-height: 212px;
+    background-color: #303131;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+.stepCircle {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    position: relative;
+
+}
+
+.circleWidth {
+    width: 170px;
+}
+
+.dotsPlusStatuses {
+    flex: 1.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.teamName {
+    max-width: 150px;
+    padding: 10px;
+    flex: 1;
+}
+
+.fa-ellipsis-h {
+    font-size: 25px;
+    padding: 20px;
+}
+
+.inProgress {
+    background-color: #99ccff;
+}
+
+.completed {
+    background-color: rgb(0, 100, 0);
+    color: #fff;
+}
+
+.notStarted {
+    background-color: #999900;
+}
+
+.colorsExplanationContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.colorExplanation {
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.steps {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.underline {
+    height: 3px;
+    min-width: 30px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 55px;
+}
+
+.greyLine {
+    height: 3px;
+    width: 15px;
+    display: inline-block;
+    background-color: grey;
+}
+
+.blueLine {
+    height: 3px;
+    width: 55px;
+    display: inline-block;
+    background-color: #99ccff;
+}
+
+.white {
+    background-color: #fff;
+    color: #303131;
+}
+
+@media screen and (max-width: 1420px) {
+    .stepCircle {
+        width: 100px;
+        height: 100px;
+        font-size: 13px;
+    }
+
+    .circleWidth {
+        width: 100px;
+    }
+
+    .underline {
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+    }
+    .teamName{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .stepCircle {
+        width: 80px;
+        height: 80px;
+        font-size: 11px;
+    }
+
+    .circleWidth {
+        width: 80px;
+    }
+
+    .underline {
+        left: 18px;
+        bottom: 0px;
+        width: 20px;
+    }
+
+    .greyLine {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .specificTeam {
+        flex-direction: column;
+    }
+
+    .steps {
+        flex-wrap: wrap;
+    }
+
+    .titleLogo {
+        width: 300px;
+        height: 100px;
+    }
+
+    .underline {
+        left: 18px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .steps {
+        flex-direction: column;
+    }
+
+}

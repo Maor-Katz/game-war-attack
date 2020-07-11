@@ -1,3 +1,4 @@
+@import "lowerResolution.css";
 .App {
     text-align: center;
     font-family: 'Raleway', sans-serif;
@@ -158,71 +159,3 @@
     color: #303131;
 }
 
-@media screen and (max-width: 1420px) {
-    .stepCircle {
-        width: 100px;
-        height: 100px;
-        font-size: 13px;
-    }
-
-    .circleWidth {
-        width: 100px;
-    }
-
-    .underline {
-        position: absolute;
-        bottom: -10px;
-        left: 20px;
-    }
-    .teamName{
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 1080px) {
-    .stepCircle {
-        width: 80px;
-        height: 80px;
-        font-size: 11px;
-    }
-
-    .circleWidth {
-        width: 80px;
-    }
-
-    .underline {
-        left: 18px;
-        bottom: 0px;
-        width: 20px;
-    }
-
-    .greyLine {
-        display: none !important;
-    }
-}
-
-@media screen and (max-width: 970px) {
-    .specificTeam {
-        flex-direction: column;
-    }
-
-    .steps {
-        flex-wrap: wrap;
-    }
-
-    .titleLogo {
-        width: 300px;
-        height: 100px;
-    }
-
-    .underline {
-        left: 18px;
-    }
-}
-
-@media screen and (max-width: 395px) {
-    .steps {
-        flex-direction: column;
-    }
-
-}
